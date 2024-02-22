@@ -1,0 +1,13 @@
+python datafree_kd.py \
+--method dense \
+--dataset cifar10 \
+--fl_model 'cifar10_clients10_dir0.6_sig0.0_cnn_Llr0.01_Le100_seed42' \
+--batch_size 128 \
+--teacher cnn \
+--student cnn \
+--kd_lr 0.01 \
+--epochs 200 \
+--g_steps 30 \
+--lr_g 1e-3 \
+--seed 42 \
+--print_freq 1
